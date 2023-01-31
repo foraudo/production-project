@@ -28,6 +28,7 @@
     // import React from 'react';
     "allowSyntheticDefaultImports": true
   },
+  // способ решения ошибки при работе с module
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
