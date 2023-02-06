@@ -26,7 +26,13 @@
     // import * as React from 'react';
     // можно писать такой
     // import React from 'react';
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    // асболютные пути будут начинаться от уровня где находится tsconfig 
+    "baseUrl": ".",
+
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
   // способ решения ошибки при работе с module
   "ts-node": {
