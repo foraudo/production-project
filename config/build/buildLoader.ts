@@ -3,6 +3,20 @@ import webpack from 'webpack';
 import { BuildOptions } from './types/config';
 
 export function buildLoader({ isDev }: BuildOptions): webpack.RuleSetRule[] {
+  const svgLoader = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack'],
+  };
+
+  const fileLoader = {
+    test: /\.(png|jpe?g|gif|woff2?|)$/i,
+    use: [
+      {
+        loader: 'file-loader',
+      },
+    ],
+  };
+
   const scssLoader = {
     test: /\.s[ac]ss$/i,
     use: [
@@ -27,5 +41,5 @@ export function buildLoader({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     exclude: /node_modules/,
   };
 
-  return [typescriptLoader, scssLoader];
+  return [fileLoader, svgLoader, typescriptLoader, scssLoader];
 }
