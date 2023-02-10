@@ -1,3 +1,7 @@
 {
-  "editor.unicodeHighlight.nonBasicASCII": "inUntrustedWorkspace"
+  "editor.unicodeHighlight.nonBasicASCII": "inUntrustedWorkspace",
+  "i18n-ally.localesPaths": [
+    "public/locales",
+    "src/shared/config/i18n"
+  ]
 }
