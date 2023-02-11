@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "indentation": [4],
+    "selector-class-pattern": null,
+    "custom-property-pattern": null,
+    "scss/at-import-partial-extension": "always",
+    "scss/at-import-partial-extension-blacklist": [""]
+    
+  }
+}
