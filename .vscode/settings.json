@@ -17,4 +17,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": true
   },
+  "i18n-ally.keystyle": "nested",
 }
