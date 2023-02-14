@@ -32,12 +32,16 @@
 
     "paths": {
       "*": ["./src/*"]
-    }
+    },
+
   },
   // способ решения ошибки при работе с module
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "include": [
+    "./config/jest/setupTest.ts"
+  ],
 }
