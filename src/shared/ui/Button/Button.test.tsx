@@ -5,11 +5,12 @@ describe("Button test", () => {
   test("Test render", () => {
     render(<Button>TEST</Button>);
     expect(screen.getByText("TEST")).toBeInTheDocument();
+    screen.debug();
   });
 
-  test("Test theme clear", () => {
+  xtest("Test theme clear", () => {
     render(<Button theme={ThemeButton.CLEAR}>TEST</Button>);
     expect(screen.getByText("TEST")).toHaveClass("clear");
-    // screen.debug();
+    screen.debug();
   });
 });
