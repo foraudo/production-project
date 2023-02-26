@@ -36,3 +36,11 @@ reviews:
             type: approve
             comment: ''
             time: '2023-02-13T07:31:46.228Z'
+            resolved: true
+          - user:
+              name: Stepashka
+              email: foraudo@mail.ru
+            id: NmCJ9HzSelekqMSMZqjI5
+            type: approve
+            comment: ''
+            time: '2023-02-26T06:40:45.114Z'

@@ -7,7 +7,7 @@
   "Обновить страницу": "Update page",
   "Переключить": "toggle",
   "Короткий язык": "Eng",
-  "Войти":"Login"
-
-
+  "Войти": "Login",
+  "increment": "increment",
+  "decrement": "decrement"
 }
