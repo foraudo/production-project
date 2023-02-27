@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
@@ -15,9 +16,15 @@ export default {
 
 const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />;
 
-export const ModalIsOpen = Template.bind({});
-ModalIsOpen.args = {
-    children: 'Modal window',
+export const Primary = Template.bind({});
+Primary.args = {
     isOpen: true,
+    children: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ',
 };
-// ModalIsOpen.decorators = [ThemeDecorator]; напишем попозже
+
+export const Dark = Template.bind({});
+Dark.args = {
+    isOpen: true,
+    children: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.\n ',
+};
+Dark.decorators = [ThemeDecorator(Theme.DARK)];
